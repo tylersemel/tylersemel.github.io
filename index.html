@@ -11,6 +11,7 @@
     <script src="/js/noise.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/swirl.js"></script>
+    <link rel="icon" type="image/x-icon" href="/files/favicon.ico">
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/demo2.css">
@@ -27,15 +28,21 @@
         <div class="content content--canvas">
             <section class="heading">
                 <nav class="links">
-                    <a href="/files/tylersemel_resume_2023.pdf" download="tylersemel_resume.pdf">Resume</a>
+                    <a href="/files/TylerSemel_Resume.pdf" download="TylerSemel_Resume.pdf">Resume</a>
                     <a href="http://www.linkedin.com/in/tylersemel" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="https://github.com/tylersemel" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </nav>
             </section>
+            <nav class="screen-links">
+                <a href="/files/tylersemel_resume_2023.pdf" download="TylerSemel_Resume.pdf">Resume</a>
+                <a href="http://www.linkedin.com/in/tylersemel" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/tylersemel" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
             <div class="content__title">
                 <h2>Hello! I'm Tyler Semel.</h2>
                 <div class="about-view">
-                    <p>I'm a game developer. <a href="#projects">View My Projects.</a></p>
+                    <p>I'm a game developer.</p>
+                    <p class="projects-link"><a href="#projects">View My Projects.</a></p>
                 </div>
             </div>
         </div>
@@ -45,7 +52,7 @@
         <section class="projects-container">
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/p&pscreenshot.png" alt="Screenshot of the game Random Forests.">
+                    <img src="/images/p&pscreenshot.png" alt="Screenshot of the game Random Forests.">
                 </div>
                 <div class ="p-about">
                     <h2>Random Forests</h2>
@@ -55,18 +62,18 @@
             </div>
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/dreamfilespic.png" alt="Screenshot of the game Dream Files">
+                    <img src="/images/dreamfilespic.png" alt="Screenshot of the game Dream Files">
                 </div>
                 <div class ="p-about">
                     <h2>Dream Files</h2>
                     <p>Dream Files is a 3D, first-person, puzzle-platformer game where you play as secret agent Magnus Mutus, a man sent on a mission inside a potential criminal's dreams. It was created with Unreal Engine 5.</p>
-                    <p>I collaborated with two other software engineers to learn more about UE5 and create a cohesive experience with a strong narrative. This game features pickup mechanics for item interaction in puzzles, dialogue to introduce the player to the character's motivations, three distinct levels, a fog clearing mechanic, and Quixel bridge assets for an semi-realistic aesthetic. </p>
+                    <p>I collaborated with two other software engineers to learn more about UE5 and create a cohesive experience with a strong narrative. This game features pickup mechanics for item interaction in puzzles, dialogue to introduce the player to the character's motivations, three distinct levels, a fog clearing mechanic, and Quixel bridge assets for a semi-realistic aesthetic. </p>
                     <a class="game-link" href="/html/dreamfiles.html">See More.</a>
                 </div>
             </div>
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/pixieprankpic.png" alt="Screenshot of the twine implementation of The Pixie's Prank">
+                    <img src="/images/pixieprankpic.png" alt="Screenshot of the twine implementation of The Pixie's Prank">
                 </div>
                 <div class ="p-about">
                     <h2>The Pixie's Prank</h2>
@@ -79,25 +86,29 @@
             </div>
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/UML.png" alt="Screenshot of the UML diagram for the CoffeeMaker system.">
+                    <img src="/images/coffeemaker2.png" alt="Screenshot of the UML diagram for the CoffeeMaker system.">
                 </div>
                 <div class ="p-about">
                     <h2>CoffeeMaker</h2>
-                    <p>A previously created system that was exanded upon to bring drink recipe creation to life. Created with Java, ReactJS, Hibernate, Spring Boot, and RESTful API.</p>
+                    <p>CoffeeMaker is a system for customers to order and pick up drinks from the staff that create and make these drinks. CoffeeMaker has functionality for creating a customer account, signing in as either a customer or staff, staff management of creation and deletion of drink recipes, updating the status of an ordered drink, placing a drink order for a customer, seeing a customer's previously ordered drinks, and updating inventory if an ingredient is out of stock.</p>
+                    <p>I worked on this project for three months with four other software developers. This system was a pre-established one that we were tasked with adding all of the functionality listed above. We used Java, HTML, CSS, AngularJS, Hibernate, Spring Boot, MySQL, and RESTful API to deliver the final product.</p>
+                    <a class="game-link" href="https://github.com/tylersemel/CoffeeMaker" target="_blank" rel="noopener noreferrer">View CoffeeMaker's GitHub.</a>
                 </div>
             </div>
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/recipesocialpic2.png" alt="Screenshot of the PWA Recipe Social's account page.">
+                    <img src="/images/recipesocialpic2.png" alt="Screenshot of the PWA Recipe Social's account page.">
                 </div>
                 <div class ="p-about">
                     <h2>Recipe Social</h2>
-                    <p>Join the social media for sharing recipes and following fellow recipe enjoyers. Created with HTML, CSS, JavaScript, and Node.js.</p>
+                    <p>Recipe Social was created for a web development class in which myself and two other software engineers had to create a Progressive Web App for any topic we chose. We decided to make a PWA that would act as a social media for recipes, allowing users to create, store, and share recipes with friends. </p> 
+                    <p>This project was created over the course of four months and we utilized HTML, CSS, JavaScript, Docker, MariaDB, as well as Node.js to fully flesh out our system.</p>
+                    <a class="game-link" href="https://github.com/tylersemel/Recipe_Social" target="_blank" rel="noopener noreferrer">See Recipe Social's GitHub.</a>
                 </div>
             </div>
             <div class="p">
                 <div class="image-container">
-                    <img src="/files/ue-logo.png" alt="Unreal Engine Logo">
+                    <img class="unreal" src="/images/Unreal-Engine-logo.jpg" alt="Unreal Engine Logo">
                 </div>
                 <div class ="p-about">
                     <h2>UE5 Prototype In Progress</h2>
@@ -105,7 +116,8 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+        </footer>
     </div>
 </body>
 </html> 

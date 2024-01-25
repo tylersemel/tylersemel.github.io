@@ -16,7 +16,6 @@ html {
 
 body {
     margin: 0;
-    /* background-color: rgba(27,27,27,1); */
     color: #fff;
 }
 
@@ -50,7 +49,6 @@ a:focus {
 }
 
 .video-section {
-	/* width: 30%; */
 	margin-left: 10vw;
 	display: flex;
 	flex-direction: column;
@@ -58,12 +56,11 @@ a:focus {
 
 .video {
 	width: 30%;
-	/* margin-left: 10vw; */
 }
 
 .content__title {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -75,7 +72,6 @@ a:focus {
 }
 
 .about {
-	/* margin-right: 10vw; */
 	text-align: left;
 	margin-left: 27%;
 	margin-right: 27%;
@@ -88,14 +84,16 @@ a:focus {
 .center {
 	display: flex;
 	flex-direction: column;
+	align-content: center;
+	justify-items: center;
+	justify-content: center;
 	position: absolute;
 	top: 30%;
-	left: 0;
+	/* left: 0; */
 	width: 100%;
+	/* width: 100vw; */
     align-items: center;
 	text-align: center;
-    /* width: 30%; */
-    /* height: 40%;  */
 	margin: -5.5vw 0 0 0;
 	z-index: 100;
 	font-size: 3vw;
@@ -105,29 +103,51 @@ a:focus {
 
 
 
-
 .back {
-	/* display: flex; */
-	/* align-self: left; */
-	/* margin-top: 15%; */
-	top: 5%;
-	/* left: 0; */
-	padding: 1.5vw 1.5vh;
+	margin-left: 2%;
+	margin-top: 2%;
 	font-size: 2vw;
-	
 }
 
 .about {
-	/* position: absolute; */
-	/* top: 90%; */
-	/* left: 0;
-	width: 100%;
-	text-align: center;
-	align-items: center; */
-	/* margin: -5.5vw 0 0 0; */
 	z-index: 100;
 	font-size: 1vw;
 	color: var(--color-title);
-	/* background-color: plum; */
 	line-height: 1;
+}
+
+@media only screen and (max-width: 480px) {
+	main {
+		height: 100vh;
+		/* display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 10%;
+		left: 0;
+		z-index: 100;
+		font-size: 8vh;
+		color: #fff;
+		line-height: 1; */
+	}
+
+	.video {
+		/* width: 50%;
+		height: 60%; */
+		padding: 0;
+	}
+
+	.content__title {
+		font-size: 3vh;
+		padding: 0;
+	}
+
+	.back {
+		font-size: 3vh;
+	}
+
+	.center .about{
+		margin-left: 3%;
+		margin-right: 3%;
+		font-size: 2.5vh;
+	}
 }
