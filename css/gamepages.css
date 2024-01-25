@@ -73,17 +73,17 @@ iframe {
 	width: 100vw;
 	margin-left: 3%;
 	margin-right: 3%;
-	align-items: center;
-	justify-content: center;
-	justify-items: center;
-	margin-top:1%; 
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* justify-items: center; */
+	/* margin-top:1%;  */
 }
 
 .center {
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
-	/* align-content: center; */
+	/* align-items: stretch; */
+	align-content: center;
 	/* justify-items: center; */
 	/* justify-content: center; */
 	position: absolute;
@@ -99,6 +99,7 @@ iframe {
 	color: #fff;
 	line-height: 1;
 }
+
 
 .back {
 	margin-left: 2%;

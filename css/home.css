@@ -166,7 +166,7 @@ a:focus {
 
 
 footer {
-    padding: 2vh;
+    padding: 1vh;
 }
 
 .image-container img {
@@ -181,6 +181,13 @@ footer {
     width: 200px;
     height: 200px;
     /* object-fit: cover;   */
+}
+
+.est {
+    font-size: 0.6vw;
+    align-items: center;
+    width:100vw;
+    text-align: center;
 }
 
 
