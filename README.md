@@ -1,1 +1,0 @@
-# tylersemel.github.io
