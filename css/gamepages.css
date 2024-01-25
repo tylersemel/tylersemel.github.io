@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'Unbounded', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    /* background-color: rgba(27,27,27,1); */
+    color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #3c48fa;
+	outline: none;
+    transition: 0.3s;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+	outline: none;
+}
+
+.demo-2 {
+	--color-text: #ff53ff;
+	--color-link: #3c48fa;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.video-section {
+	/* width: 30%; */
+	margin-left: 10vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.video {
+	width: 30%;
+	/* margin-left: 10vw; */
+}
+
+.content__title {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin: -5.5vw 0 0 0;
+	z-index: 100;
+	font-size: 3vw;
+	color: var(--color-title);
+	line-height: 1;
+}
+
+.about {
+	/* margin-right: 10vw; */
+	text-align: left;
+	margin-left: 27%;
+	margin-right: 27%;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	margin-top:1%;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 100%;
+    align-items: center;
+	text-align: center;
+    /* width: 30%; */
+    /* height: 40%;  */
+	margin: -5.5vw 0 0 0;
+	z-index: 100;
+	font-size: 3vw;
+	color: #fff;
+	line-height: 1;
+}
+
+
+
+
+.back {
+	/* display: flex; */
+	/* align-self: left; */
+	/* margin-top: 15%; */
+	top: 5%;
+	/* left: 0; */
+	padding: 1.5vw 1.5vh;
+	font-size: 2vw;
+	
+}
+
+.about {
+	/* position: absolute; */
+	/* top: 90%; */
+	/* left: 0;
+	width: 100%;
+	text-align: center;
+	align-items: center; */
+	/* margin: -5.5vw 0 0 0; */
+	z-index: 100;
+	font-size: 1vw;
+	color: var(--color-title);
+	/* background-color: plum; */
+	line-height: 1;
+}
