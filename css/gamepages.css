@@ -76,7 +76,7 @@ iframe {
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	margin-top:1%; */
+	margin-top:1%; 
 }
 
 .center {
@@ -99,11 +99,6 @@ iframe {
 	color: #fff;
 	line-height: 1;
 }
-
-iframe {
-}
-
-
 
 .back {
 	margin-left: 2%;
