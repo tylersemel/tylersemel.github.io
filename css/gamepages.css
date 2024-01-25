@@ -48,14 +48,11 @@ a:focus {
 	align-items: center;
 }
 
-.video-section {
-	margin-left: 10vw;
-	display: flex;
-	flex-direction: column;
-}
-
-.video {
-	width: 30%;
+iframe {
+	margin-left: 5vw;
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 100vw;
 }
 
 .content__title {
@@ -72,33 +69,38 @@ a:focus {
 }
 
 .about {
-	text-align: left;
-	margin-left: 27%;
-	margin-right: 27%;
+	/* /* text-align: left; */
+	width: 100vw;
+	margin-left: 3%;
+	margin-right: 3%;
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	margin-top:1%;
+	margin-top:1%; */
 }
 
 .center {
 	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-items: center;
-	justify-content: center;
+	flex-direction: row;
+	align-items: stretch;
+	/* align-content: center; */
+	/* justify-items: center; */
+	/* justify-content: center; */
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	/* left: 0; */
-	width: 100%;
-	/* width: 100vw; */
-    align-items: center;
-	text-align: center;
-	margin: -5.5vw 0 0 0;
+	/* width: 100%; */
+	width: 100vw;
+    /* align-items: center; */
+	/* text-align: center; */
+	/* margin: -5.5vw 0 0 0; */
 	z-index: 100;
 	font-size: 3vw;
 	color: #fff;
 	line-height: 1;
+}
+
+iframe {
 }
 
 
@@ -130,9 +132,9 @@ a:focus {
 		line-height: 1; */
 	}
 
-	.video {
-		/* width: 50%;
-		height: 60%; */
+	iframe {
+		width: 60%;
+		height: 80%;
 		padding: 0;
 	}
 
@@ -143,6 +145,14 @@ a:focus {
 
 	.back {
 		font-size: 3vh;
+	}
+
+	.center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100vw;
 	}
 
 	.center .about{
