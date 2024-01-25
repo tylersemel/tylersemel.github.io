@@ -63,3 +63,23 @@ a:focus {
     height: 100vh;
     top: 40%;
 }
+
+@media only screen and (max-width: 480px) {
+	main {
+		height: 100vh;
+	}
+
+	.resume {
+        width: 100vw;
+        height: 100vh;
+        top: 40%;
+	}
+
+	.back {
+		font-size: 3vh;
+        border-radius: 8px;
+        padding: 1%;
+        top: 95%;
+	}
+
+}
