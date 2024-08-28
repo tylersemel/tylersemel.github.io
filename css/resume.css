@@ -43,8 +43,6 @@ a:focus {
     position: fixed;
     z-index: 1;
     background-color: hsla(260,40%,5%,1);
-    /* width: 100vw; */
-    /* padding: 1vw 1vh; */
     margin-left: 2vw;
     top: 2%;
     font-size: 1.5vw;
@@ -55,13 +53,12 @@ a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* top: 20%; */
 }
 
 .resume {
-    width: 50%;
+    width: 50vw;
     height: 100vh;
-    top: 40%;
+    /* top: 40%; */
 }
 
 @media only screen and (max-width: 480px) {
