@@ -10,10 +10,8 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-family:Tahoma, Geneva, Verdana, sans-serif;
-    scrollbar-color: rgba(159, 241, 255, 0.56) rgb(31, 103, 144);
+    scrollbar-color: rgba(78, 83, 101, 0.803) rgb(255, 255, 255);
     scrollbar-width: thin;
-    /* height: 100vh;
-    width: 100vw; */
 }
 
 body {
@@ -42,6 +40,10 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
 }
 
 ul, il {
@@ -101,7 +103,7 @@ header #links ul {
 #content {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 #content main {
@@ -119,7 +121,7 @@ header #links ul {
     justify-content: center;
     align-items: center;
 
-    border-bottom: 1px solid rgb(91, 91, 91);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 #content main #about {
@@ -130,10 +132,47 @@ header #links ul {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(40px);
     width: fit-content;
+    max-height: 60vh;
     font-size: 3.5rem;
     padding: 5px 40px;
 }
 
 #content #projects {
     background-color: rgb(0, 0, 0);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: rgb(255,35,162);
+    background: radial-gradient(circle, rgba(255,35,162,1) 0%, rgba(70,126,252,1) 100%);
+
+    height: 600px;
+}
+
+#projects > div.title {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects > div.title h2 {
+    color: black;    
+    /* color: white; */
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(60px);
+    padding: 5px 45px;
+    font-size: 35px;
+    max-height: 15vh;
+}
+
+footer {
+    margin: auto 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
 }
