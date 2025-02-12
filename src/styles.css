@@ -65,6 +65,7 @@ a:hover {
 :root {
     --main-bg-color: rgb(255, 255, 255);
     --border-radius: 5px;
+    --center-width: 800px;
 }
 
 header {
@@ -75,7 +76,7 @@ header {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
+   
 }
 
 header .container {
@@ -83,8 +84,9 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: var(--center-width);
     padding-bottom: 5px;
+    border-bottom: 1px solid black;
     
 }
 
@@ -111,27 +113,22 @@ header #links ul li {
 }
 
 #content main {
-    /* height: 100vh; */
     margin-top: 50px;
-    /* width: 800px; */
     width: 100%;
-    border-bottom: 1px solid black;
-    /* max-width: 100%; */
 
     display: flex;
     justify-content: center;
-
-    padding-bottom: 50px;
-    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .about-container {
-    width: 800px;    
+    width: var(--center-width);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 #content main #about {
@@ -174,7 +171,7 @@ header #links ul li {
     justify-content: start;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: var(--center-width);
 }
 
 #projects > div.title {
@@ -188,7 +185,7 @@ header #links ul li {
 
 #projects > div.title h2 {
     color: black;    
-    color: white;
+    /* color: white; */
     text-align: center;
     border-radius: var(--border-radius);
     padding: 5px 5px;
@@ -223,7 +220,8 @@ footer {
     backdrop-filter: blur(10px);
     padding: 30px 30px;
     height: 400px;
-    min-width: fit-content;
+    width: 100%;
+    /* min-width: fit-content; */
     margin-top: 20px;
     border: 1px solid black;
     display: flex;
@@ -233,7 +231,8 @@ footer {
 }
 
 #projects-container .project .info {
-    width: 450px;
+    /* width: 450px; */
+    width: 50%;
     height: 100%;
     align-self: start;
     font-size: 1.5rem;
@@ -261,7 +260,7 @@ footer {
 
 #projects-container .project .img-container {
     padding: 30px 0px 30px 50px;
-    width: 550px;
+    /* width: 550px; */
     height: 400px;
 }
 
