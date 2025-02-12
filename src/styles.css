@@ -9,22 +9,16 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* font-family:Tahoma, Geneva, Verdana, sans-serif; */
     scrollbar-color: rgba(78, 83, 101, 0.803) rgb(255, 255, 255);
     scrollbar-width: thin;
-
-    min-width: fit-content;
 }
 
 body {
     line-height: 1.5;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 input, button, textarea, select {
@@ -64,8 +58,8 @@ a {
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
-    text-decoration-line: underline;
+    color: rgb(185, 0, 0);
+    /* text-decoration-line: underline; */
 }
 
 :root {
@@ -74,17 +68,14 @@ a:hover {
 }
 
 header {
+    background-color: white;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    position: fixed;
     height: fit-content;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    padding: 20px 0px;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid black;
 }
 
 header .container {
@@ -92,8 +83,9 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 9px 0px;
-    width: 70vw;
+    width: 800px;
+    padding-bottom: 5px;
+    
 }
 
 header #links ul {
@@ -104,7 +96,6 @@ header #links ul {
 }
 
 header #links ul li {
-    /* background-color: white; */
     padding: 0 3px;
 }
 
@@ -112,53 +103,76 @@ header #links ul li {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-}
-
-#content main {
-    background-image: url("./images/blur-bg-crop.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 85vh;
-    width: 100%;
-    max-width: 100%;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
-
-#content main #about {
-    position: absolute;
-    text-align: center;
-    color: black;
-    /* text-align: left; */
-    background-color: black;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(40px);
-    /* width: 300px; */
-    max-height: 60vh;
-    font-size: 2.5rem;
-    padding: 20px 50px;
-    /* border-radius: var(--border-radius); */
-}
-
-#content #projects {
-    background-color: rgb(0, 0, 0);
-    color: white;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background: rgb(255,35,162);
-    background: radial-gradient(circle, rgba(255,35,162,1) 0%, rgba(70,126,252,1) 100%);
+}
 
+#content main {
+    /* height: 100vh; */
+    margin-top: 50px;
+    /* width: 800px; */
+    width: 100%;
+    border-bottom: 1px solid black;
+    /* max-width: 100%; */
+
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.about-container {
+    width: 800px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+}
+
+#content main #about {
+    width: 400px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+#content main #about h3,
+#content main #about p {
+    text-align: left;
+}
+
+#content main #about p {
+    margin-top: 20px;
+}
+
+
+#content main .profile-pic {
+    height: 480px;
+}
+
+
+#content main .profile-pic img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#content #projects {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -171,18 +185,12 @@ header #links ul li {
     width: 100%;
 }
 
-html {
-    letter-spacing: 2px;
-}
 
 #projects > div.title h2 {
     color: black;    
     color: white;
-    /* font-weight: bold; */
     text-align: center;
     border-radius: var(--border-radius);
-    /* background-color: rgba(255, 255, 255, 0.6); */
-    /* backdrop-filter: blur(100px); */
     padding: 5px 5px;
     width: 60%;
     font-size: 2.5rem;
@@ -196,7 +204,6 @@ footer {
     color: white;
     text-align: center;
     padding: 5px 0px;
-    /* border-top: 2px solid white; */
 }
 
 #projects-container {
@@ -213,15 +220,12 @@ footer {
 
 #projects-container .project {
     color: black;
-    background-color: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(10px);
     padding: 30px 30px;
     height: 400px;
-    /* width: 1000px; */
-    /* margin: 0px 20vw; */
     min-width: fit-content;
     margin-top: 20px;
-
+    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -267,10 +271,9 @@ footer {
     max-width: 100%;
     height: 100%;
     max-height: 100%;
-    /* border-radius: var(--border-radius); */
 }
 
 #projects-container .project .info .project-title {
     font-weight: bold;
-}
+} 
 
