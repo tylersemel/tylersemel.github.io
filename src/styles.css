@@ -184,13 +184,7 @@ body {
     background-color: rgb(42, 43, 48);
     cursor: pointer;
     transition: 0.2s;
-}
 
-#projects-container .project:hover {
-    box-shadow: 3px 3px 1px gray;
-}
-
-#projects-container .project .top {
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -199,20 +193,12 @@ body {
     width: 100%;
 }
 
-#projects-container .project button {
-    border-top: 1px solid gray;
-    width: 100%;
-    background-color: rgb(42, 43, 48);
-    padding: 2px 0px;
-    text-align: center;
-    transition: 0.2s;
+#projects-container .project:hover {
+    box-shadow: 3px 3px 1px gray;
 }
 
-#projects-container .project button:hover {
-    filter: brightness(130%);
-}
 
-#projects-container .project .top .info {
+#projects-container .project .info {
     width: 50%;
     height: 100%;
     align-self: start;
@@ -235,7 +221,7 @@ body {
     flex: 1;
 }
 
-#projects-container .project .top .info ul {
+#projects-container .project .info ul {
     display: flex;
     flex-direction: row;
     gap: 10px;

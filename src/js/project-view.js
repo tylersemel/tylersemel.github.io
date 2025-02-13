@@ -1,5 +1,5 @@
-import RandomForests from '../images/randomforests.png';
-import CoffeeMaker from '../images/coffeemaker2.png';
+import randomForestsImg from '../images/randomforests.png';
+import coffeeMakerImg from '../images/coffeemaker2.png';
 
 
 export const ProjectView = (() => {
@@ -42,8 +42,12 @@ export const ProjectView = (() => {
             toolLi.textContent = tool;
         }
 
-        console.log(project.img);
-        img.src = project.img;
+        switch(project.title) {
+            case 'Random Forests':
+                img.src = randomForestsImg;
+                break;
+        }
+
         img.setAttribute('alt', project.imgAlt);
         imgContainer.appendChild(img);
     }
