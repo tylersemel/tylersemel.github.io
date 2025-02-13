@@ -181,7 +181,7 @@ body {
 #projects-container .project {
     min-width: fit-content;
     width: 100%;
-    background-color: rgb(42, 43, 48);
+    background-color: rgb(43, 45, 52);
     cursor: pointer;
     transition: 0.2s;
 
@@ -194,7 +194,7 @@ body {
 }
 
 #projects-container .project:hover {
-    box-shadow: 3px 3px 1px gray;
+    box-shadow: 3px 3px 1px var(--link-color);
 }
 
 

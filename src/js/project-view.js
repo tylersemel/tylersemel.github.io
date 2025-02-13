@@ -46,6 +46,11 @@ export const ProjectView = (() => {
             case 'Random Forests':
                 img.src = randomForestsImg;
                 break;
+            case 'CoffeeMaker':
+                img.src = coffeeMakerImg;
+                break;
+            default:
+                img.src = coffeeMakerImg;
         }
 
         img.setAttribute('alt', project.imgAlt);
