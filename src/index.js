@@ -9,3 +9,13 @@ import "./styles.css";
 // ];
 
 // ProjectView.createProjectDivs(projects);
+
+const projectDivs = document.querySelectorAll('.project');
+
+for (const div of projectDivs) {
+    div.addEventListener('click', handleClickProject);
+}
+
+function handleClickProject() {
+    alert('hi');
+}

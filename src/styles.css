@@ -66,6 +66,7 @@ html, body {
     width: 100%;
     max-width: 100%;
     background-color: #18181b;
+    /* background-color: rgb(233, 236, 240); */
     color: rgb(212 212 216);
     font-size: 17px;
 }
@@ -80,6 +81,7 @@ body {
 
 .overlay {
     background: linear-gradient(transparent, #18181b80 40%, #18181b);
+    /* background: linear-gradient(transparent, #ffffff80 40%, rgb(233, 236, 240)); */
     width: 100%;
     top: 0;
     left: 0;
@@ -180,6 +182,12 @@ body {
     min-width: fit-content;
     width: 100%;
     background-color: rgb(42, 43, 48);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#projects-container .project:hover {
+    box-shadow: 3px 3px 1px gray;
 }
 
 #projects-container .project .top {
@@ -211,7 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: rgb(42, 43, 48);
+    /* background-color: rgb(42, 43, 48); */
     margin-bottom: 30px;
     padding: 10px;
 
@@ -235,6 +243,7 @@ body {
 
 #projects-container .project .info ul li {
     background-color: rgb(218, 218, 218);
+    /* background-color: #a1a1b4; */
     padding: 2px 5px;
 }
 
