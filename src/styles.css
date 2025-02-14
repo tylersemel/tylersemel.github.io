@@ -81,6 +81,7 @@ button, input[type="submit"], input[type="reset"] {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    font-size: 18px;
 }
 
 ul, il {
@@ -92,14 +93,14 @@ a {
 
 }
 
-/* a:hover {
-
-} */
+a:hover {
+    text-decoration-line: underline;
+}
 
 :root {
     --header-bg-color:#d8dad3; 
     --content-bg-color: #ffffff;
-    --header-width: 650px;
+    --header-width: 700px;
     --content-width: 700px
 }
 
@@ -124,6 +125,21 @@ header {
     font-family: "poppinsmedium", sans-serif;
 }
 
+h1 {
+    font-size: 45px;
+    font-family: "poppinssemibold";
+    color: line
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
 .header-container {
     width: var(--header-width);
     height: 100%;
@@ -134,7 +150,18 @@ header {
 }
 
 .home-wrapper {
-    font-size: 1.8rem;
+    font-size: 27px;
+    align-items: center;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-btn img {
+    margin-bottom: 4px;
 }
 
 .links-container {
@@ -144,3 +171,97 @@ header {
     align-items: center;
 }
 
+#content-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: var(--content-width);
+}
+
+#main-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#main-text .text .name {
+    background: linear-gradient(
+        to right,
+        #4043ea 20%,
+        #00b0cf 30%,
+        #3397fb 70%,
+        #1fd0d0 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#main-text .text .role {
+    color: #5a5353;
+}
+
+#main-text .image-wrapper {
+    height: 180px;
+    width: 180px;
+}
+
+#main-text .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about {
+    margin-top: 50px;
+}
+
+#skills {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#skills h3 {
+    font-size: 27px;
+}
+
+#skills .skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+#skills .skills-container .skill-wrapper .skill {
+    padding: 4px 6px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
