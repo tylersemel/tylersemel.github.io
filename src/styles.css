@@ -200,7 +200,7 @@ h3 {
 .links-container .social a:hover::after {
     width: 48px; 
     height: 48px; 
-  }
+}
 
 #content-wrapper {
     width: 100%;
