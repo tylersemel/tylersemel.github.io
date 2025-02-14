@@ -2,6 +2,8 @@ import profileImage from "../images/Dana_Scully.jpg";
 
 export const HomeView = (() => {
     function displayHome(contentDiv) {
+        const body = document.querySelector('body');
+        body.style.backgroundColor = "white";
         contentDiv.innerHTML =
         ` <section id="main-text">
             <div class="text">
