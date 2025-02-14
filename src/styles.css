@@ -88,20 +88,27 @@ ul, il {
     list-style: none;
 }
 
-a {
+a, button {
     text-decoration-line: none;
-
+    transition: 0.1s;
 }
 
-a:hover {
-    text-decoration-line: underline;
+a:hover, button:hover {
+    /* text-decoration-line: underline; */
+    text-decoration-color: var(--highlight-color);
+    color: var(--highlight-color);
+}
+
+button, a {
+    color: var(--header-bg-color);
 }
 
 :root {
-    --header-bg-color:#d8dad3; 
+    --header-bg-color:#5a5353;
     --content-bg-color: #ffffff;
     --header-width: 700px;
-    --content-width: 700px
+    --content-width: 700px;
+    --highlight-color: #1369ca;
 }
 
 html, body {
@@ -128,7 +135,6 @@ header {
 h1 {
     font-size: 45px;
     font-family: "poppinssemibold";
-    color: line
 }
 
 h2 {
@@ -158,10 +164,11 @@ h3 {
     display: flex;
     align-items: center;
     gap: 10px;
+    /* color: black; */
 }
 
 .home-btn img {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .links-container {
@@ -171,10 +178,32 @@ h3 {
     align-items: center;
 }
 
+.links-container .social a {
+    position: relative;
+}
+
+.links-container .social a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--highlight-color);
+    filter: opacity(30%);
+    transition: width 0.3s ease, height 0.3s ease; 
+    margin-bottom: 90px;
+}
+
+.links-container .social a:hover::after {
+    width: 48px; 
+    height: 48px; 
+  }
+
 #content-wrapper {
-    margin-top: 20px;
     width: 100%;
-    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +211,9 @@ h3 {
 
 #content {
     width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 #main-text {
@@ -191,6 +223,7 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-top: 30px;
 }
 
 #main-text .text .name {
@@ -199,7 +232,7 @@ h3 {
         #4043ea 20%,
         #00b0cf 30%,
         #3397fb 70%,
-        #1fd0d0 80%
+        #00c9e4 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -234,13 +267,8 @@ h3 {
     object-fit: cover;
 }
 
-#about {
-    margin-top: 50px;
-}
-
 #skills {
     width: 100%;
-    margin-top: 50px;
 }
 
 #skills h3 {
@@ -257,11 +285,7 @@ h3 {
 }
 
 #skills .skills-container .skill-wrapper .skill {
-    padding: 4px 6px;
-    /* border: 1px solid black; */
-    border-radius: 5px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
 }
