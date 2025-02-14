@@ -8,7 +8,7 @@ export const HomeView = (() => {
         ` <section id="main-text">
             <div class="text">
                 <h1 class="name">Hi! I'm Tyler</h1>
-                <h2 class="role">Software Engineer in NC</h2>
+                <h2 class="role">Software Engineer</h2>
             </div>
             <div class="image-wrapper"></div>
         </section>
@@ -18,6 +18,29 @@ export const HomeView = (() => {
                 I am interested in full-stack development and have focused my time on experimenting to hone these skills. 
                 I am available for work!
             </p>
+        </section>
+        <section id="projects2">
+            <h3>Projects</h3>
+            <ul class="projects-list">
+                <li class="skill-wrapper">
+                    <div class="skill">Random Forests</div>
+                </li>
+                <li class="skill-wrapper">
+                    <div class="skill">CSS</div>
+                </li>
+                <li class="skill-wrapper">
+                    <div class="skill">JavaScript</div>
+                </li>
+                <li class="skill-wrapper">
+                    <div class="skill">Java</div>
+                </li>
+                <li class="skill-wrapper">
+                    <div class="skill">C/C++</div>
+                </li>
+                <li class="skill-wrapper">
+                    <div class="skill">Databases</div>
+                </li>
+            </ul>
         </section>
         <section id="skills">
             <h3>Skills</h3>
