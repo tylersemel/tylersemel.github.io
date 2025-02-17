@@ -14,9 +14,10 @@ export const HomeView = (() => {
             </section>
             <section id="about" class="home-section">
                 <h3>About</h3>
-                <p>I am a new software engineer graduating with a Bachelors in Computer Science from NC State. 
-                    I am interested in full-stack development and have focused my time on experimenting to hone these skills. 
-                    I am available for work!
+                <p> Currently, I'm freelance at DataAnnotation to analyze and document errors in AI generated code.
+                    At the same time, I'm progressing through The Odin Project's Full Stack JavaScript course to gain a more complete understanding of
+                    web development. 
+                    I'm available for work!
                 </p>
             </section>
             <section id="projects" class="home-section">
@@ -29,6 +30,7 @@ export const HomeView = (() => {
                     <li class="project-item"><button class="project-btn" data-project="todo-list">To Do List</button></li>
                     <li class="project-item"><button class="project-btn" data-project="recipe-social">Recipe Social</button></li>
                     <li class="project-item"><button class="project-btn" data-project="dream-files">Dream Files</button></li>
+                    <li class="project-item"><button class="project-btn" data-project="jump-game">Jump!</button></li>
                 </ul>
             </section>
             <section id="skills" class="home-section">

@@ -52,6 +52,14 @@ export const ProjectsView = (() => {
                         <li>C++</li>
                     </ul>
                 </article>
+                <article class="project" data-project="jump-game">
+                    <h2 class="title">Jump!</h2>
+                    <p class="description">A simple game to jump on platforms.</p>
+                    <ul class="tags-container">
+                        <li>Unreal Engine 5</li>
+                        <li>C++</li>
+                    </ul>
+                </article>
             </section>`;
     }
 

@@ -30,7 +30,7 @@ export const ProjectView = (() => {
                         I worked on this Unity project with four other software developers over the course of four months. We were tasked with the implementation of the "board" portion of the game along with integrating it with a sample selection of minigames. 
                         Katabasis provided us with the minigames to integrate into the landing spaces of the board.
                         
-                        We proposed and implemented a web-style board game that utilizes a card-based movement system along with minigames. These cards allow students to strategize while learning more about certain animals, driving engagement and educational value.
+                        We proposed and implemented a web-style board game that utilizes a card-based movement system. These cards allow students to strategize while learning more about animals and their biomes, driving engagement and educational value.
                         I signed a participation agreement with Katabasis, so I cannot show any source code for this project, but I can show gameplay as displayed in the video above.
                     </p>
                 </div>
@@ -163,6 +163,33 @@ export const ProjectView = (() => {
                     </p>
                 </div>
             </div>`;
+        const jumpGame = 
+        `<div class="project-container">
+                    <h1 class="project-title">Jump!</h1>
+                    <ul class="tags-container">
+                        <li>Unreal Engine 5</li>
+                        <li>C++</li>
+                    </ul>
+                    <p class="short-desc">A simple game to jump on platforms. Made with Unreal Engine 5.</p>
+                    
+                    <div class="project-iframe-container">
+                        <iframe src="https://drive.google.com/file/d/1Hkh2RO9kiyThV4BwoJdXbHOv24phh8K6/preview" width="640" height="360" allow="autoplay"></iframe>
+                        <span><em>Gameplay of Jump!</em></span>
+                    </div>
+                    <div class="project-links-container">
+                        <span>Links:</span>
+                        <ul class="project-links">
+                            <li class="project-link"><a href="https://pseudocryptid.itch.io/jump" target="_blank" rel="noopener noreferrer">Jump! itch.io</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-info-container">
+                        <p>
+                            This is a short game where the player can jump indefinitely to earn the highest score!
+                            I used this project as an exercise to better understand UE5 fundamentals.
+                            My sister created the player model and the cloud VFX.
+                        </p>
+                    </div>
+                </div>`;
 
     const htmlString = 
     `<div class="project-container">
@@ -224,6 +251,9 @@ export const ProjectView = (() => {
                 break;
             case 'dream-files':
                 contentDiv.innerHTML = dreamFiles;
+                break;
+            case 'jump-game':
+                contentDiv.innerHTML = jumpGame;
                 break;
             default: 
                 contentDiv.textContent = "Nothing to see here";
