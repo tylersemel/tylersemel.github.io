@@ -10,7 +10,7 @@ const projectsBtn = document.querySelector('header .projects-btn');
 projectsBtn.addEventListener('click', handleClickProjects);
 const contentDiv = document.querySelector("#content");
 
-// handleClickHome();
+handleClickHome();
 
 function clearContent() {
     contentDiv.replaceChildren();
@@ -38,8 +38,6 @@ function handleClickProjects() {
     for (const projectCard of projectCards) {
         projectCard.addEventListener("click", handleClickProject);
     }
-    
-    
 }
 
 function handleClickProject(e) {

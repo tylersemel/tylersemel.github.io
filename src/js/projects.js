@@ -27,7 +27,7 @@ export const ProjectsView = (() => {
                 </article>
                 <article class="project" data-project="todo-list">
                     <h2 class="title">To Do List</h2>
-                    <p class="description">Create and manage to do lists - kanban style.</p>
+                    <p class="description">Create and manage to do lists, kanban style.</p>
                     <ul class="tags-container">
                         <li>JavaScript</li>
                         <li>HTML</li>
