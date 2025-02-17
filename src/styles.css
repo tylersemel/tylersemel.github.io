@@ -294,7 +294,8 @@ h3 {
 }
 
 #skills .skills-container,
-.projects-list {
+.projects-list,
+.project-container .tags-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -359,11 +360,49 @@ h3 {
     gap: 20px;
 }
 
-.project .tags-container li {
+.project .tags-container li,
+.project-container .tags-container li {
     padding: 2px 5px;
     border-radius: 5px;
     background-color: #e6f6ff;
     /* color: white; */
     color:#5a5353;
     font-size: 13px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.project-container .project-title {
+    font-size: 45px;
+    font-family: "poppinssemibold";
+    color: black;
+    /* text-align: center; */
+}
+
+.project-container .short-desc {
+    margin-top: 30px;
+}
+
+.project-container .project-links-container {
+    margin-top: 30px;
+}
+
+.project-container .project-links-container .project-links {
+    color: #5a5353;
+    list-style: circle;
+    margin-left: 50px;
+}
+
+.project-container .project-links-container .project-links a:hover {
+    color: var(--highlight-color);
+}
+
+.project-container .project-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }

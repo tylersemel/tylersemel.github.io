@@ -1,27 +1,16 @@
 import "./styles.css";
 import { HomeView } from "./js/home";
 import { ProjectsView } from "./js/projects";
+import { ProjectView } from "./js/project";
+
+
 const homeBtn = document.querySelector('.home-btn');
 homeBtn.addEventListener('click', handleClickHome);
-
+const projectsBtn = document.querySelector('header .projects-btn');
+projectsBtn.addEventListener('click', handleClickProjects);
 const contentDiv = document.querySelector("#content");
 
-HomeView.displayHome(contentDiv);
-
-const projectsBtns = document.querySelectorAll('.projects-btn');
-
-for (const btn of projectsBtns) {
-    console.log(btn);
-    btn.addEventListener('click', handleClickProjects);
-}
-
-const projectBtns = document.querySelectorAll('.project-btn');
-
-for (const btn of projectBtns) {
-    btn.addEventListener('click', handleClickProject);
-}
-
-
+// handleClickHome();
 
 function clearContent() {
     contentDiv.replaceChildren();
@@ -30,17 +19,33 @@ function clearContent() {
 function handleClickHome() {
     clearContent();
     HomeView.displayHome(contentDiv);
-    const projectsBtn = document.querySelector("#projects .projects-btn");
+
+    const projectsBtn = contentDiv.querySelector("#projects .projects-btn");
     projectsBtn.addEventListener('click', handleClickProjects);
+
+    const projectBtns = contentDiv.querySelectorAll('.project-btn');
+
+    for (const btn of projectBtns) {
+        btn.addEventListener('click', handleClickProject);
+    }
 }
 
 function handleClickProjects() {
     clearContent();
     ProjectsView.displayProjects(contentDiv);
+
+    const projectCards = contentDiv.querySelectorAll(".projects-container .project");
+    for (const projectCard of projectCards) {
+        projectCard.addEventListener("click", handleClickProject);
+    }
+    
     
 }
 
 function handleClickProject(e) {
-    // clearContent();
-    console.log(e.target);
+    clearContent();
+    const projectElement = e.target.closest('.project') ||
+                        e.target.closest('.project-btn');
+    const project = projectElement.getAttribute("data-project");
+    ProjectView.displayProject(project, contentDiv);
 }
