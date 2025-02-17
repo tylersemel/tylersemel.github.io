@@ -4,7 +4,7 @@ export const ProjectsView = (() => {
         body.style.backgroundColor = "rgb(248, 248, 248)";
 
         contentDiv.innerHTML = 
-        ` <h1 class="main-title">Projects</h1>
+        ` <h1 class="main-title projects">Projects</h1>
             <section class="projects-container">
                 <article class="project">
                     <h2 class="title">Random Forests</h2>

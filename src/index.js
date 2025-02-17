@@ -4,16 +4,24 @@ import { ProjectsView } from "./js/projects";
 const homeBtn = document.querySelector('.home-btn');
 homeBtn.addEventListener('click', handleClickHome);
 
-const projectsBtn = document.querySelectorAll('.projects-btn');
+const contentDiv = document.querySelector("#content");
 
-for (const btn of projectsBtn) {
+HomeView.displayHome(contentDiv);
+
+const projectsBtns = document.querySelectorAll('.projects-btn');
+
+for (const btn of projectsBtns) {
+    console.log(btn);
     btn.addEventListener('click', handleClickProjects);
 }
 
+const projectBtns = document.querySelectorAll('.project-btn');
 
-const contentDiv = document.querySelector("#content");
+for (const btn of projectBtns) {
+    btn.addEventListener('click', handleClickProject);
+}
 
-// HomeView.displayHome(contentDiv);
+
 
 function clearContent() {
     contentDiv.replaceChildren();
@@ -22,9 +30,17 @@ function clearContent() {
 function handleClickHome() {
     clearContent();
     HomeView.displayHome(contentDiv);
+    const projectsBtn = document.querySelector("#projects .projects-btn");
+    projectsBtn.addEventListener('click', handleClickProjects);
 }
 
 function handleClickProjects() {
     clearContent();
     ProjectsView.displayProjects(contentDiv);
+    
+}
+
+function handleClickProject(e) {
+    // clearContent();
+    console.log(e.target);
 }
