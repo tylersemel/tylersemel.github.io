@@ -52,7 +52,7 @@ export const ProjectView = (() => {
                         
                         <span><i>The home page of CoffeeMaker.</i></span>
                     </div>
-                    <div class="img-wrapper">
+                    <div class="img-wrapper two">
                         
                         <span><i>The system's structure as a UML diagram.</i></span>
                     </div>
@@ -227,7 +227,7 @@ export const ProjectView = (() => {
                 img1.alt = "The home page of CoffeeMaker.";
                 imageWrapper1.insertBefore(img1, imageWrapper1.querySelector("span"));
 
-                const imageWrapper2 = document.querySelector(".img-wrapper");
+                const imageWrapper2 = document.querySelector(".img-wrapper.two");
                 const img2 = document.createElement("img");
                 img2.src = coffeeMakerUML;
                 img2.alt = "The UML diagram for CoffeeMaker.";

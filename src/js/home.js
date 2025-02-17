@@ -1,4 +1,4 @@
-import profileImage from "../images/Dana_Scully.jpg";
+import profileImage from "../images/talon.jpg";
 
 export const HomeView = (() => {
     function displayHome(contentDiv) {
@@ -14,7 +14,7 @@ export const HomeView = (() => {
             </section>
             <section id="about" class="home-section">
                 <h3>About</h3>
-                <p> Currently, I'm freelance at DataAnnotation to analyze and document errors in AI generated code.
+                <p> Currently, I'm freelance at DataAnnotation where I analyze and document errors in AI generated code.
                     At the same time, I'm progressing through The Odin Project's Full Stack JavaScript course to gain a more complete understanding of
                     web development. 
                     I'm available for work!
