@@ -1,4 +1,8 @@
 import "./styles.css";
+import "./images/coffeemaker/coffeemaker2.png";
+import "./images/coffeemaker/UML.png";
+import "./images/todolist.png";
+import "./images/recipesocial.png";
 import { HomeView } from "./js/home";
 import { ProjectsView } from "./js/projects";
 import { ProjectView } from "./js/project";
