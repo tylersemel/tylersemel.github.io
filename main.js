@@ -1136,8 +1136,8 @@ const UML_namespaceObject = __webpack_require__.p + "9df92779d6de49b7c001.png";
 const todolist_namespaceObject = __webpack_require__.p + "f4a95cc3fd499ee84f3e.png";
 ;// ./src/images/recipesocial.png
 const recipesocial_namespaceObject = __webpack_require__.p + "362feafa44b993e91c02.png";
-;// ./src/images/talon.jpg
-const talon_namespaceObject = __webpack_require__.p + "7b7874efa6715e2fadfc.jpg";
+;// ./src/images/me-square.jpg
+const me_square_namespaceObject = __webpack_require__.p + "50303124977348320d2a.jpg";
 ;// ./src/js/home.js
 
 
@@ -1200,7 +1200,7 @@ const HomeView = (() => {
 
         const imageWrapper = document.querySelector(".image-wrapper");
         const img = document.createElement("img");
-        img.src = talon_namespaceObject;
+        img.src = me_square_namespaceObject;
         img.alt = "My profile picture";
         imageWrapper.appendChild(img);
     }
