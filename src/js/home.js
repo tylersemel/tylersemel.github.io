@@ -1,4 +1,4 @@
-import profileImage from "../images/talon.jpg";
+import profileImage from "../images/me-square.jpg";
 
 export const HomeView = (() => {
     function displayHome(contentDiv) {
